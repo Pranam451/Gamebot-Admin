@@ -67,6 +67,50 @@ $(function () {
           }]
       }]
     });
+    // Build the chart
+    Highcharts.chart('IndexChartThree', {
+      chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          type: 'pie'
+      },
+      title: {
+          text: 'Browser market'
+      },
+      tooltip: {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: false
+              },
+              showInLegend: true
+          }
+      },
+      series: [{
+          name: 'Brands',
+          colorByPoint: true,
+          data: [{
+              name: 'Chrome',
+              y: 22.41,
+              sliced: true,
+              selected: true
+          }, {
+              name: 'IE',
+              y: 11.84
+          }, {
+              name: 'FX',
+              y: 10.85
+          }, {
+              name: 'Edge',
+              y: 4.67
+          }]
+      }]
+    });
 
     // Build the chart
     Highcharts.chart('IndexChartTwo', {
