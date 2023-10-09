@@ -2252,27 +2252,27 @@ footer .bottom a:hover {
   margin-bottom: 30px;
 }
 
-#admin #questions .head {
+#admin #dashboard-sessions .head {
   margin-bottom: 20px;
 }
 
-#admin #questions .pro {
+#admin #dashboard-sessions .pro {
   margin-bottom: 15px;
 }
 
-#admin #questions .pro:last-of-type {
+#admin #dashboard-sessions .pro:last-of-type {
   margin-bottom: 0;
 }
 
-#admin #questions .pro .proTop {
+#admin #dashboard-sessions .pro .proTop {
   display: flex;
 }
 
-#admin #questions .pro .proTop .left {
+#admin #dashboard-sessions .pro .proTop .left {
   flex: 1;
 }
 
-#admin #questions .pro .proTop p {
+#admin #dashboard-sessions .pro .proTop p {
   font-size: 13px;
   font-weight: 600;
   color: #8da2b7;
@@ -2281,12 +2281,12 @@ footer .bottom a:hover {
   margin-bottom: 6px;
 }
 
-#admin #questions .pro .progress {
+#admin #dashboard-sessions .pro .progress {
   height: 10px;
   background-color: #e3eaf1;
 }
 
-#admin #questions .pro .progress .progress-bar {
+#admin #dashboard-sessions .pro .progress .progress-bar {
   background-color: #8da2b7;
 }
 
