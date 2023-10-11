@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- start linking  -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- icon -->
+    <link rel="icon" href="img/log.png" />
+    <!-- end linking -->
+    <title>NutFlix - admin</title>
+    <style>
+        .cafe-list.row {
+            background: #f5f5f5;
+            padding: 10px 0px;
+            border-bottom: 1px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- start admin -->
+    <section id="admin">
+        <!-- start sidebar -->
+        <div class="sidebar">
+            <!-- start with head -->
+            <div class="head">
+                <div class="logo">
+                    <img src="img/site-logo.png" alt="Site Logo" />
+                </div>
+            </div>
+            <!-- end with head -->
+            <!-- start the list -->
+            <div id="list">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><i class="fa fa-adjust"></i>Dashboard</a>
+                    </li>
+                    <!-- end user interface submenu -->
+
+                    <li class="nav-item">
+                        <a href="maps.html" class="nav-link"><i class="fab fa-playstation"></i> Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="stats.html" class="nav-link"><i class="fa fa-chart-pie"></i>Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cafe.html" class="nav-link"><i class="fas fa-utensils"></i> Cafe</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="membership.html" class="nav-link"><i class="fa fa-users"></i>Membership</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end the list -->
+        </div>
+        <!-- end sidebar -->
+        <!-- start content -->
+        <div class="content">
+            <!-- start content head -->
+            <div class="head">
+                <!-- head top -->
+                <div class="top">
+                    <div class="left">
+                        <button id="on" class="btn btn-info">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="off" class="btn btn-info hide">
+                            <i class="fa fa-align-left"></i>
+                        </button>
+
+                    </div>
+                    <div class="right">
+
+                        <div class="dropdown">
+                            <button class="btn btn-info dropdown-toggle" id="userDropdown" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                mohamed
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">Manipal</a>
+                                <!-- <a class="dropdown-item" href="#">sitting</a> -->
+                                <!-- <a class="dropdown-item" href="#">log out</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="real">
+                <!-- start content here -->
+                <div class="wrap">
+                    <section class="app-content">
+                        <div class="user-list-title mb-2 row justify-content-between"
+                            style="background-color: #dedede;border-radius: 10px 10px 0px 0px;padding:20px;">
+                            <div class="mb-0  h5 col-1 text-center">Id</div>
+                            <div class="mb-0  h5 col-2 text-center">Name</div>
+                            <div class="mb-0  h5 col-1  text-center">DOR</div>
+                            <div class="mb-0  h5 col-1  text-center">Status</div>
+                            <div class="mb-0  h5 col-1  text-center">Wallet</div>
+                            <div class="mb-0 col-1 text-center h5 ">Code</div>
+                            <div class="mb-0 col-2 text-center h5 "></div>
+                        </div>
+                        <!-- user list starts -->
+                        <div class=" row justify-content-between align-items-center "
+                            style="padding: 15px 20px;border-bottom: 1px solid rgb(213, 213, 213);">
+                            <div class="mb-0   col-1 text-center">Id</div>
+                            <div class="mb-0   col-2 text-center">
+                                <input type="text" name="" id="" value="Swafeer" class="text-center">
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <input type="date" name="" id="" value="2023-02-09">
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <select name="" id="" value="Active">
+                                    <option value="active">Active</option>
+                                    <option value="passive">Passive</option>
+                                </select>
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <input type="number" name="" id="" value="2700" style="width: 100%;">
+                            </div>
+                            <div class="mb-0 col-1 text-center  ">
+                                <input type="text" name="" id="" value="25357858X">
+                            </div>
+                            <div class="mb-0 col-2 text-center d-flex ">
+                                <button type="button" class="btn btn-outline-primary mr-1">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <button class="btn btn-primary" type="submit">Update</button>
+                            </div>
+                        </div>
+                        <!-- user list ends -->
+                        <!-- user list starts -->
+                        <div class=" row justify-content-between align-items-center "
+                            style="padding: 15px 20px;border-bottom: 1px solid rgb(213, 213, 213);">
+                            <div class="mb-0   col-1 text-center">Id</div>
+                            <div class="mb-0   col-2 text-center">
+                                <input type="text" name="" id="" value="Swafeer" class="text-center">
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <input type="date" name="" id="" value="2023-02-09">
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <select name="" id="" value="Active">
+                                    <option value="active">Active</option>
+                                    <option value="passive">Passive</option>
+                                </select>
+                            </div>
+                            <div class="mb-0   col-1  text-center">
+                                <input type="number" name="" id="" value="2700" style="width: 100%;">
+                            </div>
+                            <div class="mb-0 col-1 text-center  ">
+                                <input type="text" name="" id="" value="25357858X">
+                            </div>
+                            <div class="mb-0 col-2 text-center d-flex ">
+                                <button type="button" class="btn btn-outline-primary mr-1">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <button class="btn btn-primary" type="submit">Update</button>
+                            </div>
+                        </div>
+                        <!-- user list ends -->
+                        <div class="user-list-title mb-2 row justify-content-end"
+                            style="background-color: #dedede;border-radius: 0px 0px 10px 10px;padding:10px;">
+
+                            <div class="mb-0 col-2 text-center h5 ">
+
+                            </div>
+                        </div>
+                    </section>
+                    <section class="app-content mt-5">
+                        <div class="widget w-50">
+                            <h4 class="h4">Add new user</h4>
+                            <form>
+
+                                <label for="exampleInputName" class="form-label">Full Name</label>
+                                <input type="email" class="form-control mb-3" id="exampleInputName">
+
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control  mb-3" id="exampleInputEmail1">
+
+                                <label for="exampleInputWallet" class="form-label">Wallet</label>
+                                <input type="number" class="form-control  mb-3" id="exampleInputWallet">
+
+                                <label for="exampleInputCode" class="form-label">Code</label>
+                                <input type="text" class="form-control  mb-3" id="exampleInputCode">
+
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end head top -->
+    <!-- start screpting -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/app.js"></script>
+    <!-- end screpting -->
+</body>
+
+</html>
